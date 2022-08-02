@@ -12,10 +12,10 @@
   "dependencies": {
     "body-parser": "^1.20.x",
     "cookie-parser": "~1.4.x",
-    "debug": "~2.6.x",
-    "express": "~4.16.x",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
+    "debug": "~4.3.x",
+    "express": "~4.18.x",
+    "http-errors": "~2.0.0",
+    "morgan": "~1.10.0",
     "pug": "^3.0.2",
     "serve-favicon": "^2.5.0",
     "cluster": "^0.7.7",
@@ -24,6 +24,6 @@
   "devDependencies": {
     "jake": "^10.8.5",
     "loadtest": "^5.2.0",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.19"
   }
 }

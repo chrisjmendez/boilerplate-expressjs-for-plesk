@@ -5,6 +5,9 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
 
     block stylesheets
+
+    include ./includes/analytics
+
     //jQuery
     script(src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
     //Date Format
@@ -15,7 +18,6 @@ html
       })
 
     block javascripts
-
   body
     block content
 

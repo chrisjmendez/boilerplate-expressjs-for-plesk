@@ -12,14 +12,26 @@ module.exports = {
         rootPath: rootPath,
         port:     process.env.PORT || 8080,
         ip:       process.env.HOST || "localhost",
-		clients: [
-		]
+        mailgun: {
+            DOMAIN:    "sandbox.provider.com",
+            API_KEY:   "xxxxxx",
+            RECIPIENT: "xxxxxx@email.recipient"
+        },
+        hubspot: {
+            PRIVATE_APP_API: process.env.HUBSPOT_PRIVATE_APP_API
+        }
     },
     production: {
         rootPath: rootPath,
         port:     process.env.NODEJS_PORT || 80,
         ip  :     process.env.NODEJS_IP,
-		clients: [
-		]
+        mailgun: {
+            DOMAIN:    process.env.MAILGUN_DOMAIN,
+            API_KEY:   process.env.MAILGUN_PRIVATE_KEY,
+            RECIPIENT: process.env.MAILGUN_RECIPIENT
+        },
+        hubspot: {
+            PRIVATE_APP_API: process.env.HUBSPOT_PRIVATE_APP_API
+        }
     }
  }
